@@ -1,4 +1,4 @@
-.main {
+.locate {
     max-width: 1275px;
 
     &__boxes {
@@ -92,7 +92,7 @@
 }
 
 @media only screen and (max-width:768px)  {
-    .main {
+    .locate {
         margin-top: 140px;
 
         &__boxes {
@@ -145,7 +145,7 @@
 }
 
 @media only screen and (max-width:430px) {
-    .main {
+    .locate {
         max-width: 573px;
      &__line {
          display: none;
