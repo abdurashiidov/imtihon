@@ -2,14 +2,15 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend Deca", "Space Mono";
 }
 * ::after, *::before{
             box-sizing: inherit;
 }
 .container{
-    max-width: 1335px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 img{
   max-width: 100%;

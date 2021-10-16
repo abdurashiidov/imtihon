@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Lexend Deca", "Space Mono";
 }
 
 * ::after, *::before {
@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-  max-width: 1335px;
+  max-width: 1140px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 img {
@@ -365,57 +365,237 @@ template {
   display: none;
 }
 
-.deals {
-  max-width: 270px;
-  background-color: #F6F7F8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.deals-wrap {
-  max-width: 235px;
-}
-
-.deals__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.deals__heading {
-  font-family: "Poppins", "Arial", sans-serif;
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("LexendDeca-Regular.woff2") format("woff2"), url("LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url("SpaceMono-Bold.woff2") format("woff2"), url("SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("LexendDeca-Medium.woff2") format("woff2"), url("LexendDeca-Medium.woff") format("woff");
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #22262A;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("LexendDeca-Medium.woff2") format("woff2"), url("LexendDeca-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url("/fonts/LexendDeca-Regular.woff2") format("woff2"), url("/fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url("/fonts/SpaceMono-Bold.woff2") format("woff2"), url("/fonts/SpaceMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  src: url("/fonts/SpaceMono-Regular.woff2") format("woff2"), url("/fonts/SpaceMono-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lexend Deca';
+  src: url("/fonts/LexendDeca-Regular.woff2") format("woff2"), url("/fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.locate {
+  margin-top: 200px;
+}
+
+.locate__line {
+  background-color: #E5ECF4;
+  border: 15px solid #E5ECF4;
+  width: 1000px;
+  margin-left: -200px;
+}
+
+.locate-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.locate-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 350px;
+  margin-right: 30px;
+}
+
+.locate-box:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.locate-box__heading1 {
+  font-family: "Space Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
   margin: 0;
   padding: 0;
 }
 
-.deals__heading2 {
-  font-family: "Proxima Nova", "Arial", sans-serif;
+.locate-box__heading1::before {
+  content: "";
+  background-image: url(./../../img/phone.svg);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 38px 48px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  background-position: center center;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  margin-top: -62px;
+}
+
+.locate-box__heading2 {
+  font-family: "Space Mono", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #262626;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
   margin: 0;
   padding: 0;
 }
 
-.deals__text {
-  font-family: "Proxima Nova", "Arial", sans-serif;
+.locate-box__heading2::before {
+  content: "";
+  background-image: url(./../../img/scooter.svg);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 42px 32px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  background-position: center center;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  margin-top: -62px;
+}
+
+.locate-box__heading3 {
+  font-family: "Space Mono", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: #22262A;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
   margin: 0;
   padding: 0;
+}
+
+.locate-box__heading3::before {
+  content: "";
+  background-image: url(./../../img/rider.svg);
+  background-repeat: no-repeat;
+  display: block;
+  background-size: 40px 40px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  background-position: center center;
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+  margin-top: -62px;
+}
+
+.locate-box__text {
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .locate {
+    max-width: 573px;
+  }
+  .locate__line {
+    background-color: #E5ECF4;
+    border: 15px solid #E5ECF4;
+    width: 512px;
+    margin-left: -200px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+
+.locate-boxes {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.locate-box {
+  max-width: 350px;
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 200px;
+}
+
+.locate-box__heading1::before {
+  margin-left: -180px;
+  position: relative;
+  bottom: -150px;
+}
+
+.locate-box__text {
+  width: 398px;
 }
 /*# sourceMappingURL=main.css.map */
